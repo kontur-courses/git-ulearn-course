@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <slide.exercise xmlns="https://ulearn.me/schema/v2" title="Задача exercise.file" id="90BCB61E-57F0-4BAA-8BC9-10C9CFD27F59">
-  <scoring group="homework" passedTestsScore="50" codeReviewScore="0"/>
+  <scoring group="practice" passedTestsScore="50" codeReviewScore="0"/>
   <defaultIncludeCodeFile>_FirstStep.cs</defaultIncludeCodeFile>
   <markdown>
 		Любая, даже самая сложная дорога, начинается с первого шага.
