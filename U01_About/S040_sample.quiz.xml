@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide.quiz xmlns="https://ulearn.me/schema/v2" title="Пример теста" id="41138C54848F4F49856BB738B7E39D28">
+  <scoring tries="3" group="laboratory"/>
+  <question.text id="fillInQuestion" explanation="Описание правильного ответа" maxScore="2" multiline="true">
+    <text>Введите корректное число</text>
+    <sample>42</sample>
+    <regex>\d+</regex>
+  </question.text>
+  <question.isTrue id="isTrueQuestion" explanation="Описание правильного ответа" answer="true" maxScore="2">
+    <text>Верно ли утверждение?</text>
+  </question.isTrue>
+  <question.choice id="choiceQuestion" multiple="false" shuffle="true" maxScore="3">
+    <text>Выберите вариант</text>
+    <item id="1" isCorrect="true">
+Первый вариант
+Вторая строка первого варианта
+    </item>
+    <item id="2" isCorrect="false">Второй вариант. Формула TeX: $a \times b$</item>
+    <item id="3" isCorrect="false">Третий вариант</item>
+    <item id="4" isCorrect="false">Четвёртый вариант</item>
+  </question.choice>
+  <question.choice id="choiceQuestionMultiple" multiple="true" shuffle="true">
+    <text>Выберите варианты</text>
+    <allowedMistakes checkedUnnecessary="1" notCheckedNecessary="0"/>
+    <item id="1" isCorrect="true">Первый вариант</item>
+    <item id="2" isCorrect="false">Второй вариант</item>
+    <item id="3" isCorrect="maybe">Третий вариант. Его можно как выбрать, так и не выбирать</item>
+    <item id="4" isCorrect="false">Четвёртый вариант</item>
+  </question.choice>
+  <question.order id="OrderingQuestion">
+    <text>Упорядочите элементы</text>
+    <explanation>Объяснение правильного ответа</explanation>
+    <item id="1">Первый длинный вариант, очень длинный, самый длинный, многострочный и никуда не влазящий</item>
+    <item id="2">Второй $a \times b$</item>
+    <item id="3">Третий</item>
+    <item id="4">Четвёртый</item>
+    <item id="5">Пятый</item>
+  </question.order>
+  <question.match id="MatchingQuestion">
+    <text>Поставьте в соответствие 2</text>
+    <explanation>Объяснение правильного ответа</explanation>
+    <match id="1">
+      <fixed>Пётр Первый, очень длинный, самый длинный, многострочный и никуда не влазящий</fixed>
+      <movable>Иван Первый</movable>
+    </match>
+    <match id="2">
+      <fixed>Пётр Второй $a \times b$</fixed>
+      <movable>Иван Второй $a \times b$</movable>
+    </match>
+    <match id="3">
+      <fixed>Пётр Третий</fixed>
+      <movable>Иван Третий, очень длинный, самый длинный, многострочный и никуда не влазящий</movable>
+    </match>
+    <match id="4">
+      <fixed>Пётр Четвёртый</fixed>
+      <movable>Иван Грозный</movable>
+    </match>
+    <match id="5">
+      <fixed>Пётр Пятый</fixed>
+      <movable>Иван Пятый</movable>
+    </match>
+  </question.match>
+</slide.quiz>

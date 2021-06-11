@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<course xmlns="https://ulearn.me/schema/v2" title="Git">
+  <dictionaryFile>dictionary.txt</dictionaryFile>
+  <defaultLanguage>python3</defaultLanguage>
+  <units>
+    <add>*/unit.xml</add>
+  </units>
+  <scoring defaultQuiz="theory" defaultExercise="practise" default="theory">
+    <group id="theory" abbr="Т" maxAdditionalScore="0">Теория</group>
+    <group id="practise" abbr="П" maxAdditionalScore="0">Практика</group>
+  </scoring>
+</course>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide.exercise xmlns="https://ulearn.me/schema/v2" title="Задача exercise.file" id="90BCB61E-57F0-4BAA-8BC9-10C9CFD27F59">
+  <scoring group="homework" passedTestsScore="50" codeReviewScore="0"/>
+  <defaultIncludeCodeFile>_FirstStep.cs</defaultIncludeCodeFile>
+  <markdown>
+		Любая, даже самая сложная дорога, начинается с первого шага.
+
+		Выведите на консоль фразу `The first step!`
+
+		<code>
+			Console.WriteLine('Участки кода можно вставлять внутрь Markdown-блоков');
+		</code>
+
+		<note>
+			Заметки для преподавателей можно вставлять внутрь Markdown-блоков
+		</note>
+
+		Допишите код функции `Main`, а затем запустите и проверьте ваше решение с помощью кнопки «Отправить».
+  </markdown>
+  <exercise.file>
+    <initialCode>
+			static public void Main()
+			{
+			// пишите код тут
+			}
+		</initialCode>
+    <hint>Вывод на консоль производится методом ```Console.WriteLine```</hint>
+    <comment>Молодец</comment>
+    <expected>The first step!</expected>
+    <solution>Main</solution>
+  </exercise.file>
+</slide.exercise>

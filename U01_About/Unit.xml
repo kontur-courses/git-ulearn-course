@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<unit xmlns="https://ulearn.me/schema/v2" title="Возможности ulearn" id="d4492182-fe1c-4531-900c-3a509c9e6c16" url="Features">
+  <scoring defaultExercise="homework">
+    <group id="laboratory" maxAdditionalScore="0"/>
+    <group id="homework" maxAdditionalScore="20"/>
+  </scoring>
+  <slides>
+    <add>S*.xml</add>
+  </slides>
+</unit>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<slide xmlns="https://ulearn.me/schema/v2" title="Код" id="C1DA3BA7256142D58F245CCEF2B176A0">
+  <defaultIncludeCodeFile>_Code.cs</defaultIncludeCodeFile>
+  <markdown>###Весь файл</markdown>
+  <includeCode/>
+  <markdown>###Класс Code</markdown>
+  <includeCode>
+    <display>Code</display>
+  </includeCode>
+  <markdown>###Метод A</markdown>
+  <includeCode>
+    <display>A</display>
+  </includeCode>
+  <markdown>###Методы B и A</markdown>
+  <includeCode>
+    <display>B</display>
+    <display>A</display>
+  </includeCode>
+  <markdown>###Класс Code. Только тело</markdown>
+  <includeCode>
+    <display onlyBody="true">Code</display>
+  </includeCode>
+  <markdown>###Метод A. Только тело</markdown>
+  <includeCode>
+    <display onlyBody="true">A</display>
+  </includeCode>
+  <markdown>###Enum</markdown>
+  <includeCode>
+    <display>Enum</display>
+  </includeCode>
+  <markdown>###Регион</markdown>
+  <includeCode>
+    <display>CSharpStyleRegion</display>
+  </includeCode>
+  <includeCode>
+    <display>CommentRegion</display>
+  </includeCode>
+  <markdown>###Питон весь файл</markdown>
+  <includeCode file="HelloWorld.py"/>
+  <markdown>###Питон регион main</markdown>
+  <includeCode file="HelloWorld.py">
+    <display>main</display>
+  </includeCode>
+  <markdown>###Java весь файл</markdown>
+  <includeCode file="_Code.java"/>
+  <markdown>###Java регион main</markdown>
+  <includeCode file="_Code.java">
+    <display>main</display>
+  </includeCode>
+</slide>

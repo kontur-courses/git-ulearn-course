@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<slide.exercise id="f998dd9a-b07e-43fc-a03c-17378755d52d" title="Задача exercise.universal" xmlns="https://ulearn.me/schema/v2">
+  <scoring group="homework" passedTestsScore="2" codeReviewScore="8"/>
+  <markdown>
+    Все задачи не на C# оформляются как exercise.universal.
+
+    Настройки js-sandbox здесь: &lt;https://github.com/kontur-edu/Ulearn/tree/master/sandboxes/js-sandbox/container&gt;
+
+    Все существующие сандбоксы здесь: &lt;https://github.com/kontur-edu/Ulearn/tree/master/sandboxes&gt;
+
+    Если нужен новый, делайте pull request.
+
+    Допиши функцию сложения.
+  </markdown>
+  <exercise.universal exerciseDirName="sum" noStudentZip="true">
+    <checkForPlagiarism>false</checkForPlagiarism>
+    <hideSolutions>true</hideSolutions>
+    <hideExpectedOutput>true</hideExpectedOutput>
+    <userCodeFile>sum.js</userCodeFile>
+    <includePathForChecker>../TestsRunner</includePathForChecker>
+    <dockerImageName>js-sandbox</dockerImageName>
+    <run>node docker-test-runner.js</run>
+    <region>Task</region>
+  </exercise.universal>
+</slide.exercise>
