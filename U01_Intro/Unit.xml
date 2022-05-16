@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<unit xmlns="https://ulearn.me/schema/v2" title="Введение" id="f8562275-a698-4440-b49a-55beb2fb37f1" url="Intro">
+  <slides>
+    <add>S*.xml</add>
+  </slides>
+</unit>

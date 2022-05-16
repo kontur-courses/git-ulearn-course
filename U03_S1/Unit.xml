@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<unit xmlns="https://ulearn.me/schema/v2" title="S1. Локальные репозитории" id="01dbac9a-520c-40f8-a5b3-9dfc8960baff" url="S1">
+  <slides>
+    <add>S*.xml</add>
+  </slides>
+</unit>

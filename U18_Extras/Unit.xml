@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<unit xmlns="https://ulearn.me/schema/v2" title="Дополнения" id="92d6a50e-b092-4591-859b-0ab789fb1d13" url="Extras">
+  <slides>
+    <add>S*.xml</add>
+  </slides>
+</unit>
