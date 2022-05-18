@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<slide id="e68a8d57-ef2e-4a83-89cd-f694fe24ba43" title="Локальные изменения и autostash" xmlns="https://ulearn.me/schema/v2">
+  <youtube>dYEutOH_dXA</youtube> 
+  <markdown>
+    Rebase не запустится, если есть изменения в Working directory или Commit Index.
+    Но в случае добавления опции `autostash`, локальные изменения сохранятся перед «перебазированием»
+    и применятся сразу после переноса всех коммитов.
+  </markdown>
+  <galleryImages>
+    <image>img\rebase-autostash.png</image>
+  </galleryImages>
+  <html><br/></html>
+
+  <markdown>
+    ### Пример команды
+
+    `git rebase --autostash main` — выполнить rebase с переносом локальных изменений.
+  </markdown>
+  <markdown>
+    ### Добавить алиас
+
+    `git config --global alias.autorebase "rebase --autostash"`
+  </markdown>
+  <markdown>
+    ### Сконфигурировать по умолчанию
+
+    Можно включить настройку, чтобы Git всегда делал autostash при rebase.
+
+    Командой:  
+    `git config --global rebase.autostash true`
+
+    Через файл конфигурации:  
+    ```
+    [rebase]
+      autostash true
+    ```
+  </markdown>
+</slide>

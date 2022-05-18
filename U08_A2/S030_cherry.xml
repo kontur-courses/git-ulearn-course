@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<slide id="2fcf2fa6-2f91-4197-bbf3-3672daada4df" title="Cherry Pick" xmlns="https://ulearn.me/schema/v2">
+  <youtube>dYEutOH_dXA</youtube>
+  <markdown>
+    **Cherry Pick** позволяет создать копию изменений произвольного коммита в новом месте.
+
+    *Cherry picking — идиома, означающая взять лучшее и оставить остальное*
+  </markdown>
+  <galleryImages>
+    <image>img\cherry-pick1.png</image>
+    <image>img\cherry-pick2.png</image>
+  </galleryImages>
+  <html><br/></html>
+
+  <markdown>
+    ### Варианты команды
+    
+    - `git cherry-pick c000003` — скопировать изменения из указанного коммита в новый коммит
+    - `git cherry-pick --no-commit c000003` или `git cherry-pick -n c000003` — скопировать
+    изменения из указанного коммита в Commit Index
+  </markdown>
+
+  <markdown>
+    ### Слияние после Cherry Pick
+
+    Пусть с помощью cherry pick изменение из коммита 3 ветки `f` было позаимствовано в основную ветку `main` в виде коммита 3'.
+    В какой-то момент все изменения ветки `f` надо будет влить в `main`.
+    Но в коммите 3' ветки `main` и в коммите 3 ветки `f` правятся одни и те же строчки кода.
+    И кажется, что это может привести к конфликту...
+    
+    Но уже известно, что слияние в Git не порождает конфликт,
+    если в «сливаемых» ветках изменения были одинаковым. Так что в большинстве случаев конфликта не будет.
+    Конфликт может появиться, если в других коммитах ветки `f` правились те же строчки, что и в 3.
+  </markdown>
+  <galleryImages>
+    <image>img\cherry-pick-merge1.png</image>
+    <image>img\cherry-pick-merge2.png</image>
+  </galleryImages>
+  <html><br/></html>
+
+  <markdown>
+    ### Rebase после Cherry Pick
+
+    А что будет в предыдущей ситуации, если вместо слияния захочется использовать rebase? Будет ли конфликт?
+    
+    Тут все аналогично слиянию: раз изменения в 3 и 3' одинаковые, то конфликта не будет.
+    Опят же конфликт может появиться только в том случае, если в других коммитах ветки `f` правились те же строчки, что и в 3.
+  </markdown>
+  <galleryImages>
+    <image>img\cherry-pick-rebase1.png</image>
+    <image>img\cherry-pick-rebase2.png</image>
+  </galleryImages>
+  <html><br/></html>
+
+  <markdown>
+    ### Выводы по конфликтам при cherry picking
+
+    Можно без лишних конфликтов заимствовать изменения из других веток, не вливая их полностью.
+  </markdown>
+</slide>

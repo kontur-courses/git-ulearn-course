@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<slide id="056654d5-9d02-4bd5-8ad0-68b0d6336132" title="Rebase" xmlns="https://ulearn.me/schema/v2">
+  <youtube>dYEutOH_dXA</youtube>
+  <markdown>
+    **Rebase** — операция  по копированию изменений коммитов из одного места в другое.
+  </markdown>
+  <markdown>
+    Слияния порождают лишние коммиты, а история становится нелинейной.
+    Хочется получать линейную историю! Как будто изменения `f` случились после `main`.
+  </markdown>
+  <galleryImages>
+    <image>img\rebase-line1.png</image>
+    <image>img\rebase-line2.png</image>
+    <image>img\rebase-line3.png</image>
+  </galleryImages>
+  <html><br/></html>
+
+  <markdown>
+    Ситуации, когда полезен rebase:
+
+    - Полезно перебазировать ветку перед тестированием, чтобы она включала все актуальные изменения из основной ветки.
+    - Историю полезно выстраивать в линию, когда пара человек работает в одной ветке над одной функциональностью.
+  </markdown>
+
+  <markdown>
+    ### Rebase создает новые коммиты
+
+    Хоть может показаться, что rebase переносит коммиты, на самом деле он создает новые с аналогичными изменениями.
+  </markdown>
+  <galleryImages>
+    <image>img\rebase1.png</image>
+  </galleryImages>
+  <html><br/></html>
+
+  <markdown>
+    ### Те же изменения на новой «базе»
+
+    Важно осознать, что rebase переносит не сами коммиты, т.е. полное состояние каталога,
+    а только «дельту», т.е. разницу между коммитом и его родителем.
+    В результате получается коммит, который равен «базе», но с изменениями из «перебазированного» коммита.
+  </markdown>
+  <galleryImages>
+    <image>img\rebase2.png</image>
+  </galleryImages>
+  <html><br/></html>
+
+  <markdown>
+    ### Пример команды
+
+    `git rebase main` — обычный rebase.
+  </markdown>
+
+  <markdown>
+    ### Rebase по шагам
+
+    Чтобы понять какие коммиты будут «перебазироваться», надо найти общего предка между коммитом,
+    на который указывает HEAD, и коммитом, на который будет «новой базой».
+
+    Rebase начинается с переноса HEAD вместе с веткой, на которую HEAD указывает, на «новую базу».
+    После этого коммиты перебазируются по одному.
+  </markdown>
+  <galleryImages>
+    <image>img\rebase-step1.png</image>
+    <image>img\rebase-step2.png</image>
+    <image>img\rebase-step3.png</image>
+    <image>img\rebase-step4.png</image>
+    <image>img\rebase-step5.png</image>
+  </galleryImages>
+  <html><br/></html>
+
+  <markdown>
+    ### Rebase в пользовательских интерфейсах
+  </markdown>
+  <galleryImages>
+    <image>img\rebase-bash.png</image>
+    <image>img\rebase-code.png</image>
+    <image>img\rebase-gitex.png</image>
+  </galleryImages>
+  <html><br/></html>
+</slide>
