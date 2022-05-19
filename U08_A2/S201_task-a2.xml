@@ -11,26 +11,26 @@
     в котором добавляется файл <code>rebase.md</code> с содержимым:
 <pre>## A2. Пересоздание истории
 - `git commit --amend --no-edit` — заменить последний коммит ветки на отредактированный с дополнительными изменениями без изменения сообщения
-- `git rebase {upstream}` — применить все коммиты от общего родителя до текущего к `{upstream}`
-- `git rebase -i {upstream}` — применить заново все коммиты, указав действие с каждым коммитом
+- `git rebase &lt;upstream&gt;` — применить все коммиты от общего родителя до текущего к `&lt;upstream&gt;`
+- `git rebase -i &lt;upstream&gt;` — применить заново все коммиты, указав действие с каждым коммитом
 - `git rebase --continue` — продолжить rebase после разрешения конфликтов
 - `git rebase --abort` — отменить rabase
-- `git cherry-pick {commit}` — применить указанный коммит к HEAD</pre>
+- `git cherry-pick &lt;commit&gt;` — применить указанный коммит к HEAD</pre>
     </li>
     <li>Коммит с сообщением <code>Change branch.md</code>,<br/>
     в котором изменяется содержимое файла <code>branch.md</code> на следующее:
 <pre>## S3. Ссылки: HEAD, теги и ветки
 - `git tag` — вывести список тегов
-- `git tag {tagname}` — создать тег
+- `git tag &lt;tagname&gt;` — создать тег
 - `git branch` — вывести список локальных веток
 - `git branch -av` — вывести список локальных и удаленных веток
-- `git branch {branchname}` — создать ветку
-- `git branch -d {branchname}` — удалить ветку
-- `git checkout {commit}` или `git switch --detach {commit}` — переместить HEAD на коммит, причем получится detached HEAD
-- `git checkout {branch}`или `git switch {branch}` — переместить HEAD на ветку
-- `git checkout -b {new_branch}` или `git switch -c {new_branch}` — создать ветку и перейти на нее
-- `git reset --hard {commit}` — переместить HEAD и текущую ветку на `{commit}`
-- `git reflog show {ref}` — показать лог действий со ссылкой
+- `git branch &lt;branchname&gt;` — создать ветку
+- `git branch -d &lt;branchname&gt;` — удалить ветку
+- `git checkout &lt;commit&gt;` или `git switch --detach &lt;commit&gt;` — переместить HEAD на коммит, причем получится detached HEAD
+- `git checkout &lt;branch&gt;`или `git switch &lt;branch&gt;` — переместить HEAD на ветку
+- `git checkout -b &lt;new_branch&gt;` или `git switch -c &lt;new_branch&gt;` — создать ветку и перейти на нее
+- `git reset --hard &lt;commit&gt;` — переместить HEAD и текущую ветку на `&lt;commit&gt;`
+- `git reflog show &lt;ref&gt;` — показать лог действий со ссылкой
 - `git reflog` = `git reflog show HEAD` — показать лог действий с HEAD
 - `git gc` — удалить ненужные файлы и оптимизировать локальный репозиторий</pre>
     </li>
@@ -42,15 +42,15 @@
     в котором изменяется содержимое файла <code>branch.md</code> на следующее:
 <pre>## S3. Ссылки: HEAD, теги и ветки
 - `git tag` — вывести список тегов
-- `git tag {tagname}` — создать тег
+- `git tag &lt;tagname&gt;` — создать тег
 - `git branch` — вывести список локальных веток
 - `git branch -av` — вывести список локальных и удаленных веток
-- `git branch {branchname}` — создать ветку
-- `git branch -d {branchname}` — удалить ветку
-- `git checkout {commit}` или `git switch --detach {commit}` — переместить HEAD на коммит, причем получится detached HEAD
-- `git checkout {branch}`или `git switch {branch}` — переместить HEAD на ветку
-- `git checkout -b {new_branch}` или `git switch -c {new_branch}` — создать ветку и перейти на нее
-- `git reset --hard {commit}` — переместить HEAD и текущую ветку на `{commit}`
+- `git branch &lt;branchname&gt;` — создать ветку
+- `git branch -d &lt;branchname&gt;` — удалить ветку
+- `git checkout &lt;commit&gt;` или `git switch --detach &lt;commit&gt;` — переместить HEAD на коммит, причем получится detached HEAD
+- `git checkout &lt;branch&gt;`или `git switch &lt;branch&gt;` — переместить HEAD на ветку
+- `git checkout -b &lt;new_branch&gt;` или `git switch -c &lt;new_branch&gt;` — создать ветку и перейти на нее
+- `git reset --hard &lt;commit&gt;` — переместить HEAD и текущую ветку на `&lt;commit&gt;`
 ### Lorem ipsum dolor sit amet, consectetur adipiscing elit</pre>
     </li>
   </ul>
@@ -61,7 +61,6 @@
 
   <p>Убедись, что благодаря тегу <code>old-rebase-feature</code> старые коммиты до сих пор видны, после чего удали тег.</p>
 </html>
-
 
 <markdown>
   # Пошаговая инструкция
@@ -76,11 +75,11 @@
     <li>Создай файл <code>rebase.md</code> со следующим содержимым:
 <pre>## A2. Пересоздание истории
 - `git commit --amend --no-edit` — заменить последний коммит ветки на отредактированный с дополнительными изменениями без изменения сообщения
-- `git rebase {upstream}` — применить все коммиты от общего родителя до текущего к `{upstream}`
-- `git rebase -i {upstream}` — применить заново все коммиты, указав действие с каждым коммитом
+- `git rebase &lt;upstream&gt;` — применить все коммиты от общего родителя до текущего к `&lt;upstream&gt;`
+- `git rebase -i &lt;upstream&gt;` — применить заново все коммиты, указав действие с каждым коммитом
 - `git rebase --continue` — продолжить rebase после разрешения конфликтов
 - `git rebase --abort` — отменить rabase
-- `git cherry-pick {commit}` — применить указанный коммит к HEAD</pre>
+- `git cherry-pick &lt;commit&gt;` — применить указанный коммит к HEAD</pre>
     </li>
 
     <li>Закоммить изменения с сообщением <code>Add rebase.md</code>.</li>
@@ -88,16 +87,16 @@
     <li>Замени содержимое <code>branch.md</code> на следующее:
 <pre>## S3. Ссылки: HEAD, теги и ветки
 - `git tag` — вывести список тегов
-- `git tag {tagname}` — создать тег
+- `git tag &lt;tagname&gt;` — создать тег
 - `git branch` — вывести список локальных веток
 - `git branch -av` — вывести список локальных и удаленных веток
-- `git branch {branchname}` — создать ветку
-- `git branch -d {branchname}` — удалить ветку
-- `git checkout {commit}` или `git switch --detach {commit}` — переместить HEAD на коммит, причем получится detached HEAD
-- `git checkout {branch}`или `git switch {branch}` — переместить HEAD на ветку
-- `git checkout -b {new_branch}` или `git switch -c {new_branch}` — создать ветку и перейти на нее
-- `git reset --hard {commit}` — переместить HEAD и текущую ветку на `{commit}`
-- `git reflog show {ref}` — показать лог действий со ссылкой
+- `git branch &lt;branchname&gt;` — создать ветку
+- `git branch -d &lt;branchname&gt;` — удалить ветку
+- `git checkout &lt;commit&gt;` или `git switch --detach &lt;commit&gt;` — переместить HEAD на коммит, причем получится detached HEAD
+- `git checkout &lt;branch&gt;`или `git switch &lt;branch&gt;` — переместить HEAD на ветку
+- `git checkout -b &lt;new_branch&gt;` или `git switch -c &lt;new_branch&gt;` — создать ветку и перейти на нее
+- `git reset --hard &lt;commit&gt;` — переместить HEAD и текущую ветку на `&lt;commit&gt;`
+- `git reflog show &lt;ref&gt;` — показать лог действий со ссылкой
 - `git reflog` = `git reflog show HEAD` — показать лог действий с HEAD
 - `git gc` — удалить ненужные файлы и оптимизировать локальный репозиторий</pre>
     </li>
@@ -109,15 +108,15 @@
     <li>Замени содержимое <code>branch.md</code> на следующее:
 <pre>## S3. Ссылки: HEAD, теги и ветки
 - `git tag` — вывести список тегов
-- `git tag {tagname}` — создать тег
+- `git tag &lt;tagname&gt;` — создать тег
 - `git branch` — вывести список локальных веток
 - `git branch -av` — вывести список локальных и удаленных веток
-- `git branch {branchname}` — создать ветку
-- `git branch -d {branchname}` — удалить ветку
-- `git checkout {commit}` или `git switch --detach {commit}` — переместить HEAD на коммит, причем получится detached HEAD
-- `git checkout {branch}`или `git switch {branch}` — переместить HEAD на ветку
-- `git checkout -b {new_branch}` или `git switch -c {new_branch}` — создать ветку и перейти на нее
-- `git reset --hard {commit}` — переместить HEAD и текущую ветку на `{commit}`
+- `git branch &lt;branchname&gt;` — создать ветку
+- `git branch -d &lt;branchname&gt;` — удалить ветку
+- `git checkout &lt;commit&gt;` или `git switch --detach &lt;commit&gt;` — переместить HEAD на коммит, причем получится detached HEAD
+- `git checkout &lt;branch&gt;`или `git switch &lt;branch&gt;` — переместить HEAD на ветку
+- `git checkout -b &lt;new_branch&gt;` или `git switch -c &lt;new_branch&gt;` — создать ветку и перейти на нее
+- `git reset --hard &lt;commit&gt;` — переместить HEAD и текущую ветку на `&lt;commit&gt;`
 ### Lorem ipsum dolor sit amet, consectetur adipiscing elit</pre>
     </li>
 
@@ -139,7 +138,7 @@
     Несмотря на то, что файлы были созданы в разных ветках, Git видит,
     что первые строчки совпадают и по ним конфликта нет. А вот оставшиеся строчки конфликтуют.
     Так как в ветке <code>rebase-feature</code> был правильный текст, нажми <code>Accept Incoming Change</code>.
-    Добавь <code>branch.md</code> в Commit Index и выполни команду <code>git rebase --continue</code>.
+    Добавь <code>branch.md</code> в Commit index и выполни команду <code>git rebase --continue</code>.
     Раз оба коммита были успешно скопированы, rebase на этом будет закончен.
     Фанфар по этому поводу не будет. В терминале просто появится сообщение «Applying: Change branch.md» без каких-либо ошибок после.
   </li>

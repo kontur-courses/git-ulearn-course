@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<slide id="2fcf2fa6-2f91-4197-bbf3-3672daada4df" title="Cherry Pick" xmlns="https://ulearn.me/schema/v2">
+<slide id="2fcf2fa6-2f91-4197-bbf3-3672daada4df" title="Cherry pick" xmlns="https://ulearn.me/schema/v2">
   <youtube>dYEutOH_dXA</youtube>
   <markdown>
-    **Cherry Pick** позволяет создать копию изменений произвольного коммита в новом месте.
+    **Cherry pick** позволяет создать копию изменений произвольного коммита в новом месте.
 
     *Cherry picking — идиома, означающая взять лучшее и оставить остальное*
   </markdown>
@@ -17,11 +17,11 @@
     
     - `git cherry-pick c000003` — скопировать изменения из указанного коммита в новый коммит
     - `git cherry-pick --no-commit c000003` или `git cherry-pick -n c000003` — скопировать
-    изменения из указанного коммита в Commit Index
+    изменения из указанного коммита в Commit index
   </markdown>
 
   <markdown>
-    ### Слияние после Cherry Pick
+    ### Слияние после Cherry pick
 
     Пусть с помощью cherry pick изменение из коммита 3 ветки `f` было позаимствовано в основную ветку `main` в виде коммита 3'.
     В какой-то момент все изменения ветки `f` надо будет влить в `main`.
@@ -39,7 +39,7 @@
   <html><br/></html>
 
   <markdown>
-    ### Rebase после Cherry Pick
+    ### Rebase после Cherry pick
 
     А что будет в предыдущей ситуации, если вместо слияния захочется использовать rebase? Будет ли конфликт?
     

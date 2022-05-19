@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
-<slide id="75fe892d-837c-4224-86c5-5f275c5aa8ea" title="Amend Commit" xmlns="https://ulearn.me/schema/v2">
+<slide id="75fe892d-837c-4224-86c5-5f275c5aa8ea" title="Amend commit" xmlns="https://ulearn.me/schema/v2">
   <youtube>dYEutOH_dXA</youtube>
   <markdown>
-    **Amend Commit** полезен, когда хочется дополнить последний коммит:
+    **Amend commit** полезен, когда хочется дополнить последний коммит:
 
-    - изменить название
+    - изменить сообщение коммита
     - добавить изменения
     - отменить изменения, т.е. добавить противоположное изменение
 
     *Amend — англ. Вносить правки*
 
-    Чтобы воспользоваться командой, надо дополнительные изменения в Commit Index
+    Чтобы воспользоваться командой, надо добавить дополнительные изменения в Commit index
     и выполнить один из вариантов команды.
   </markdown>
   <markdown>

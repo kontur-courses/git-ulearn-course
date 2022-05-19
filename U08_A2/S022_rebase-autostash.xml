@@ -2,7 +2,7 @@
 <slide id="e68a8d57-ef2e-4a83-89cd-f694fe24ba43" title="Локальные изменения и autostash" xmlns="https://ulearn.me/schema/v2">
   <youtube>dYEutOH_dXA</youtube> 
   <markdown>
-    Rebase не запустится, если есть изменения в Working directory или Commit Index.
+    Rebase не запустится, если есть изменения в Working directory или Commit index.
     Но в случае добавления опции `autostash`, локальные изменения сохранятся перед «перебазированием»
     и применятся сразу после переноса всех коммитов.
   </markdown>
