@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<unit xmlns="https://ulearn.me/schema/v2" title="S2. Дерево состояний каталога" id="24364613-aad4-4d3d-8819-f36535226d4b" url="S2">
+<unit xmlns="https://ulearn.me/schema/v2" title="S2. Коммиты" id="24364613-aad4-4d3d-8819-f36535226d4b" url="S2">
   <slides>
     <add>S*.xml</add>
   </slides>
