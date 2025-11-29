@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<slide id="77118ada-95f9-452a-b54a-fdb1ab2f5f80" title="Задание S3-2. References feature branch" xmlns="https://ulearn.me/schema/v2">
+
+<markdown>
+# Постановка задачи
+
+Отдельную функциональность следует разрабатывать в отдельных ветках. Так что раздел Гайда про ссылки (references) подготовь в ветке.
+
+# Шаг 1
+
+Создай файл `s3.md` со следующим содержимым: 
+
+```
+# S3. Ссылки
+
+#### HEAD — текущая ссылка, tag — фиксированная ссылка, branch — движущаяся за HEAD ссылка
+
+#### checkout — перемещение на ветку или коммит, reset — перемещение с веткой на коммит
+
+#### Видно то, на что есть ссылки, остальное — мусор
+
+- `git tag` — вывести список тегов
+- `git tag &lt;tagname&gt;` — создать тег
+- `git tag -d &lt;tagname&gt;` — удалить тег
+- `git branch --sort=-committerdate` — вывести список локальных веток от новых к старым
+- `git branch &lt;branchname&gt;` — создать ветку
+- `git branch -f &lt;branchname&gt; &lt;to_commit&gt;` — создать или переместить ветку
+- `git branch -M &lt;newbranch&gt;` — переименовать текущую ветку, даже если новое имя уже занято
+- `git branch -d &lt;branchname&gt;` — удалить ветку
+- `git branch -D &lt;branchname&gt;` — удалить ветку, даже если какие-то коммиты будут скрыты
+- `git checkout -d &lt;commit&gt;` или `git switch --detach &lt;commit&gt;` — переместить HEAD на коммит, причем получится detached HEAD
+- `git checkout &lt;branch&gt;` или `git switch &lt;branch&gt;` — переместить HEAD на ветку
+- `git checkout -b &lt;new_branch&gt;` = `git checkout -b &lt;new_branch&gt; HEAD` или `git switch -c &lt;new_branch&gt;` — создать ветку и перейти на нее
+- `git reset --hard &lt;commit&gt;` — переместить HEAD и текущую ветку на `&lt;commit&gt;`
+- `git log --oneline --decorate --graph` — вывести историю коммитов от HEAD в виде дерева
+- `git log --oneline --decorate --graph --all` — вывести историю коммитов от всех ссылок в виде дерева
+- `git log --oneline --decorate --graph --all --reflog` — вывести историю коммитов от всех ссылок и всех недавних положений HEAD в виде дерева
+- `git reflog show &lt;ref&gt;` — показать лог действий со ссылкой
+- `git reflog` = `git reflog show HEAD` — показать лог действий с HEAD
+- `git gc` — удалить ненужные файлы и оптимизировать локальный репозиторий
+- `&lt;ref&gt;~N` — 1-ый родитель из N-ого поколения, например, `HEAD~3`
+- `&lt;ref&gt;^N` — N-ый родитель предыдущего поколения, например, `HEAD^1^2`
+- `&lt;ref&gt;@{N}` — N-ый предшественник по reflog, например, `HEAD@{5}`
+```
+
+# Шаг 2
+
+Сделай коммит с сообщением `Add s3.md`.
+
+&gt; Как сделать коммит
+[в Git Bash?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C+%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82+%D0%B2+Git+Bash)
+| [в VS Code?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C+%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82+%D0%B2+VS+Code)
+
+# Шаг 3
+
+Ой! Эти же изменения надо было делать в новой ветке! Теперь придется исправлять!
+
+Сейчас ветка `main` находится на коммите `Add s3.md`, а должна находиться на коммите `Remove unfinished c1.md`. А на коммите `Add s3.md` должна быть новая ветка с названием, например, `refs-feature`, которую надо было создать.
+
+Открой дерево коммитов в терминале или Git Graph и убедись, что все именно так, как описано, и осознай проблему.
+
+&gt; Дерево коммитов в терминале можно открыть командой `git log --graph --oneline --decorate --all` или с помощью алиаса `git graph`
+
+# Шаг 4
+
+То, что ветка `refs-feature` не была создана сразу — это не проблема. Просто возьми и создай ее на текущем коммите. Не переключайся на эту ветку, текущей веткой должна остаться ветка `main`.
+
+&gt; Как создать ветку на текущем коммите, не переключаясь на нее,
+[в Git Bash?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C+%D0%B2%D0%B5%D1%82%D0%BA%D1%83+%D0%BD%D0%B0+%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%BC+%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82%D0%B5%2C+%D0%BD%D0%B5+%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D1%8F%D1%81%D1%8C+%D0%BD%D0%B0+%D0%BD%D0%B5%D0%B5%2C+%D0%B2+Git+Bash)
+| [в Git Graph в VS Code?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C+%D0%B2%D0%B5%D1%82%D0%BA%D1%83+%D0%BD%D0%B0+%D1%82%D0%B5%D0%BA%D1%83%D1%89%D0%B5%D0%BC+%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82%D0%B5%2C+%D0%BD%D0%B5+%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D1%8E%D1%87%D0%B0%D1%8F%D1%81%D1%8C+%D0%BD%D0%B0+%D0%BD%D0%B5%D0%B5%2C+%D0%B2+Git+Graph+%D0%B2+VS+Code)
+
+# Шаг 5
+
+Ветку `main` надо вернуть на коммит `Remove unfinished c1.md`. С этим может помочь команда `reset`, которая не просто перемещает `HEAD`, но также перемещает ветку, на которую `HEAD` указывает.
+
+Убедись, что текущая ветка — это `main`. Если почему-то это не так — надо перейти на `main`.
+
+&gt; Как узнать текущую ветку
+[в Git Bash?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C+%D1%82%D0%B5%D0%BA%D1%83%D1%89%D1%83%D1%8E+%D0%B2%D0%B5%D1%82%D0%BA%D1%83+%D0%B2+Git+Bash)
+| [в VS Code?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C+%D1%82%D0%B5%D0%BA%D1%83%D1%89%D1%83%D1%8E+%D0%B2%D0%B5%D1%82%D0%BA%D1%83+%D0%B2+VS+Code)
+
+&gt; Как переключиться на ветку
+[в Git Bash?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C+%D1%82%D0%B5%D0%BA%D1%83%D1%89%D1%83%D1%8E+%D0%B2%D0%B5%D1%82%D0%BA%D1%83+%D0%B2+Git+Bash)
+| [в Git Graph в VS Code?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%D1%82%D1%8C%D1%81%D1%8F+%D0%BD%D0%B0+%D0%B2%D0%B5%D1%82%D0%BA%D1%83+%D0%B2+Git+Graph+%D0%B2+VS+Code)
+
+Коммит `Remove unfinished c1.md` — это предыдущий коммит от текущего положения `HEAD`, поэтому на него можно сослаться в терминале по относительному имени `HEAD^` вместо использования хэша коммита.
+
+Обычно все же удобнее выполнять команду reset через контекстное меню графический интерфейс, ведь можно просто выбрать целевой коммит курсором.
+
+Выполни reset в режиме hard на коммит `Remove unfinished c1.md` через терминал, либо через графический интерфейс.
+
+&gt; Как выполнить reset в режиме hard на коммит
+[в Git Bash?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D1%8C+reset+%D0%B2+%D1%80%D0%B5%D0%B6%D0%B8%D0%BC%D0%B5+hard+%D0%BD%D0%B0+%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82+%D0%B2+Git+Bash)
+| [в Git Graph в VS Code?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D1%8C+reset+%D0%B2+%D1%80%D0%B5%D0%B6%D0%B8%D0%BC%D0%B5+hard+%D0%BD%D0%B0+%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82+%D0%B2+Git+Graph+%D0%B2+VS+Code)
+
+# Шаг 6
+
+Теперь `main` на месте и, чтобы продолжить развивать `refs-feature`, надо было бы переключиться на нее. Но делать это не надо, ведь сейчас надо будет сделать новую фичу в новой ветке относительно `main`.
+
+# Результат задания
+
+*Теперь история коммитов должна выглядеть так:*
+</markdown>
+<galleryImages>
+    <image>images\s3-2-finish.png</image>
+</galleryImages>
+
+</slide>

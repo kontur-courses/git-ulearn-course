@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<slide id="4087c17d-fd6c-4109-accd-5aaa83c58f2e" title="Задание S3-1. Tag" xmlns="https://ulearn.me/schema/v2">
+
+<markdown>
+# Постановка задачи
+
+Теги позволяют отмечать какие-то важные коммиты. Например, можно отмечать версии разрабатываемого приложения, а в нашем случае — версии разрабатываемого документа.
+
+# Сохранение прогресса
+
+Сейчас подходящий момент, чтобы сохранить текущий прогресс по выполнению заданий. Для этого достаточно сделать копию папки `ulearn-git-guide`.
+
+Рабочий каталог и репозиторий находятся внутри этой скопированной папки, так что в любой момент можно будет вернуться к сохраненному состоянию. Для этого надо либо переключиться на копию папки, заменить все содержимое папки `ulearn-git-guide` на содержимое папки с сохраненным состоянием.
+
+# Шаг 1
+
+Создай тег с именем `v0.1` с помощью команды `git tag "v0.1"` и убедись, что у коммита `Remove unfinished c1.md` появился тег.
+
+&gt; Как создать легковесный тег
+[в Git Bash?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C+%D0%BB%D0%B5%D0%B3%D0%BA%D0%BE%D0%B2%D0%B5%D1%81%D0%BD%D1%8B%D0%B9+%D1%82%D0%B5%D0%B3+%D0%B2+Git+Bash)
+| [в Git Graph в VS Code?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C+%D0%BB%D0%B5%D0%B3%D0%BA%D0%BE%D0%B2%D0%B5%D1%81%D0%BD%D1%8B%D0%B9+%D1%82%D0%B5%D0%B3+%D0%B2+Git+Graph+%D0%B2+VS+Code)
+
+# Шаг 2
+
+Проверь, что созданный тег работает!
+
+Для этого сперва переключись на начальный коммит `Initial commit`. Кстати, так как на этом коммите нет локальных веток, то это будет ситуация [detached HEAD](https://www.google.com/search?q=%D0%A7%D1%82%D0%BE+%D1%82%D0%B0%D0%BA%D0%BE%D0%B5+detached+HEAD), что пугать тебя не должно.
+
+&gt; Как переключиться на конкретный коммит в режиме detached HEAD
+[в Git Bash?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%D1%82%D1%8C%D1%81%D1%8F+%D0%BD%D0%B0+%D0%BA%D0%BE%D0%BD%D0%BA%D1%80%D0%B5%D1%82%D0%BD%D1%8B%D0%B9+%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82+%D0%B2+%D1%80%D0%B5%D0%B6%D0%B8%D0%BC%D0%B5+detached+HEAD+%D0%B2+Git+Bash)
+| [в Git Graph в VS Code?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%D1%82%D1%8C%D1%81%D1%8F+%D0%BD%D0%B0+%D0%BA%D0%BE%D0%BD%D0%BA%D1%80%D0%B5%D1%82%D0%BD%D1%8B%D0%B9+%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82+%D0%B2+%D1%80%D0%B5%D0%B6%D0%B8%D0%BC%D0%B5+detached+HEAD+%D0%B2+Git+Graph+%D0%B2+VS+Code)
+
+# Шаг 3
+
+Теперь с помощью тега вернись назад, другими словами переключись на тег с именем `v0.1`.
+
+&gt; Как переключиться на тег
+[в Git Bash?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%D1%82%D1%8C%D1%81%D1%8F+%D0%BD%D0%B0+%D1%82%D0%B5%D0%B3+%D0%B2+Git+Bash)
+| [в Git Graph в VS Code?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%D1%82%D1%8C%D1%81%D1%8F+%D0%BD%D0%B0+%D1%82%D0%B5%D0%B3+%D0%B2+Git+Graph+%D0%B2+VS+Code)
+
+# Шаг 4
+
+После предыдущего шага `HEAD` до сих пор не привязан к ветке и указывает непосредственно на коммит. Чтобы продолжить развитие Гайда, переключись на ветку `main`.
+
+&gt; Как переключиться на ветку
+[в Git Bash?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%D1%82%D1%8C%D1%81%D1%8F+%D0%BD%D0%B0+%D0%B2%D0%B5%D1%82%D0%BA%D1%83+%D0%B2+Git+Bash)
+| [в Git Graph в VS Code?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D0%BF%D0%B5%D1%80%D0%B5%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%D1%82%D1%8C%D1%81%D1%8F+%D0%BD%D0%B0+%D0%B2%D0%B5%D1%82%D0%BA%D1%83+%D0%B2+Git+Graph+%D0%B2+VS+Code)
+
+# Результат задания
+
+*Теперь история коммитов должна выглядеть так:*
+</markdown>
+<galleryImages>
+    <image>images\s3-1-finish.png</image>
+</galleryImages>
+
+</slide>
