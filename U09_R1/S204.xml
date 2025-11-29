@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<slide id="745aafef-5744-48c0-a8b8-c3f1e60deebe" title="Задание R1-4. Cherry pick" xmlns="https://ulearn.me/schema/v2">
+
+<markdown>
+# Постановка задачи
+
+Когда из какой-то ветки хочется забрать только один коммит, удобно использовать cherry-pick. Достань с помощью cherry-pick еще один полезный коммит из нового удаленного репозитория.
+
+# Шаг 1
+
+Надо достать для ветки `main` изменения из коммита `Add runner` из ветки `solved`.
+В этом случае нужен только один коммит, который находится между другими — значит подойдет cherry-pick.
+
+Достань в `main` эту вишенку с помощью хэша, тега `runner` или графического интерфейса.
+
+&gt; Как достать одиночный коммит из другой ветки с помощью cherry-pick
+[в Git Bash?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D1%82%D1%8C+%D0%BE%D0%B4%D0%B8%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B9+%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82+%D0%B8%D0%B7+%D0%B4%D1%80%D1%83%D0%B3%D0%BE%D0%B9+%D0%B2%D0%B5%D1%82%D0%BA%D0%B8+%D1%81+%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E+cherry-pick+%D0%B2+Git+Bash)
+| [в Git Graph в VS Code?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D1%82%D1%8C+%D0%BE%D0%B4%D0%B8%D0%BD%D0%BE%D1%87%D0%BD%D1%8B%D0%B9+%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82+%D0%B8%D0%B7+%D0%B4%D1%80%D1%83%D0%B3%D0%BE%D0%B9+%D0%B2%D0%B5%D1%82%D0%BA%D0%B8+%D1%81+%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E+cherry-pick+%D0%B2+Git+Graph+%D0%B2+VS+Code)
+
+# Шаг 2
+
+Убедись, что в ветке `main` появилась копия коммита `Add runner`.
+
+# Шаг 3
+
+Добавь тег `v0.5` на текущий коммит.
+
+# Результат задания
+
+*Теперь история коммитов должна выглядеть так:*
+</markdown>
+<galleryImages>
+    <image>images\r1-4-finish.png</image>
+</galleryImages>
+
+</slide>
