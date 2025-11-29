@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<slide id="93f8f298-1da8-4bd7-9dca-967060dc9f6b" title="Задание R3-3. Last push" xmlns="https://ulearn.me/schema/v2">
+
+<markdown>
+# Постановка задачи
+
+Гайд почти закончен! Остается объединить последнюю ветку с основной, добавить тег и отправить все на GitHub!
+
+# Шаг 1
+
+Переключись на ветку `main`.
+
+# Шаг 2
+
+Влей ветку `tracking-feature`, но сделай это в режиме запрета fast-forward, чтобы появился коммит слияния.
+
+&gt; Как влить ветку с обязательным созданием коммита, даже если возможен fast-forward
+[в Git Bash?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D0%B2%D0%BB%D0%B8%D1%82%D1%8C+%D0%B2%D0%B5%D1%82%D0%BA%D1%83+%D1%81+%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%BC+%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%D0%BC+%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82%D0%B0%2C+%D0%B4%D0%B0%D0%B6%D0%B5+%D0%B5%D1%81%D0%BB%D0%B8+%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%B5%D0%BD+fast-forward+%D0%B2+Git+Bash)
+| [в Git Graph в VS Code?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D0%B2%D0%BB%D0%B8%D1%82%D1%8C+%D0%B2%D0%B5%D1%82%D0%BA%D1%83+%D1%81+%D0%BE%D0%B1%D1%8F%D0%B7%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%BC+%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%D0%BC+%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82%D0%B0%2C+%D0%B4%D0%B0%D0%B6%D0%B5+%D0%B5%D1%81%D0%BB%D0%B8+%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%B5%D0%BD+fast-forward+%D0%B2+Git+Graph+%D0%B2+VS+Code)
+
+# Шаг 3
+
+Отправь ветку `main` в удаленный репозиторий.
+
+# Шаг 4
+
+Добавь тег `v1.0` на текущий коммит и отправь его в удаленный репозиторий.
+
+&gt; Как отправить отдельный тег в удаленный репозиторий [в Git Bash?](https://www.google.com/search?q=%D0%9A%D0%B0%D0%BA+%D0%BE%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C+%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9+%D1%82%D0%B5%D0%B3+%D0%B2+%D1%83%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9+%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9+%D0%B2+Git+Bash)
+
+# Результат задания
+
+*Теперь история коммитов должна выглядеть так:*
+</markdown>
+<galleryImages>
+    <image>images\r3-3-finish.png</image>
+</galleryImages>
+
+</slide>
