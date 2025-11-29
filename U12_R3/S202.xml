@@ -2,7 +2,7 @@
 <slide id="672cafe4-5d3b-4d26-a88a-5f378c933d36" title="Задание R3-2. Force push with lease" xmlns="https://ulearn.me/schema/v2">
 
 <markdown>
-# Постановка задачи
+# Введение
 
 Исправлять коммиты, опубликованные в удаленном репозитории, сложнее, чем неопубликованные. Тут уже не обойтись без force push with lease.
 
@@ -62,7 +62,7 @@
 
 Поэтому выполни push с опцией force-with-lease: `git push --force-with-lease`.
 
-# Результат задания
+# Результат
 
 *Теперь история коммитов должна выглядеть так:*
 </markdown>
