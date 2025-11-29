@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<slide id="c7124d83-4031-44db-9c9a-29a63c9022c0" title="Задание I3. Установка VS Code и Git Graph" xmlns="https://ulearn.me/schema/v2">
+
+<markdown>
+
+1. VS Code скачай [здесь](https://code.visualstudio.com/Download) и установи.  
+*Для Windows: в инсталляторе выбери все галочки в Other*
+2. Git Graph - установи через [маркетплейс](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) или найди в каталоге расширений в VS Code.
+3. После установки Git Graph перезапусти VS Code.
+4. (Опционально) Включи автосохранение в VS Code и тебе больше не придется нажимать `Ctrl/Cmd + S` после каждого изменения. Для этого поставь галочку `Auto Save` в меню  `File`.
+
+</markdown>
+
+</slide>

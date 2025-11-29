@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<slide id="c978bc55-2f59-4063-ae11-24f08ab0f92b" title="Задание C1-1. Минимальная конфигурация" xmlns="https://ulearn.me/schema/v2">
+
+<markdown>
+
+# Постановка задачи
+
+Нужно ввести следующие команды в терминале, чтобы минимально сконфигурировать Git.
+
+&gt; В Windows можно использовать Git Bash, CMD или PowerShell
+
+# Настройка имени и почты пользователя
+
+Эта информация будет прикрепляться к каждому коммиту.
+
+```
+git config --global user.name "YOUR_NAME"
+```
+
+```
+git config --global user.email "your@email.com"
+```
+
+# Настройка редактора по умолчанию
+
+Git будет открывать выбранный редактор, чтобы запрашивать сообщение к коммитам и в других ситуациях.
+
+&gt; Эти настройки будут применены для пользователя. В заданиях в любом случае будут использоваться notepad или nano за счет локальных настроек.
+
+Для Windows:  
+```
+git config --global core.editor notepad
+```
+
+Для Linux и macOS:  
+```
+git config --global core.editor nano
+```
+</markdown>
+
+</slide>

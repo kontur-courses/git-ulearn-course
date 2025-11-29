@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<slide id="93cce318-36b3-4e0d-8487-9edaa9d55e72" title="Задание C2-1. SSH для GitHub" xmlns="https://ulearn.me/schema/v2">
+
+<markdown>
+
+# Генерация пары из открытого и закрытого ключей
+
+Для этого в терминале (на Windows исключительно в Git Bash) выполни команду:
+
+```
+ssh-keygen -t ed25519 -b 4096
+```
+
+Оставь все опции по умолчанию (`Enter` после каждого вопроса).  
+
+После этого в папке `.ssh` в домашней директории пользователя будет создано 2 файла: `id_ed25519` и `id_ed25519.pub`.
+
+# Регистрация открытого ключа в настройках пользователя на GitHub
+
+Теперь нужно добавить содержимое `id_ed25519.pub` на GitHub.
+
+Просмотреть содержимое файла с ключом можно, например, с помощью VS Code.  
+
+&gt; Команда для Git Bash: `code ~/.ssh/id_ed25519.pub`
+
+&gt; Команда для CMD или PowerShell: `code %USERPROFILE%\.ssh\id_ed25519.pub`
+
+Все содержимое файла `id_ed25519.pub` нужно вставить на [этой странице GitHub](https://github.com/settings/ssh/new) в поле «Key».
+В поле «Title» можно написать что угодно, это просто название SSH-ключа.
+После этого нажми `Add SSH key` и ключ будет добавлен.
+
+# Добавление GitHub в доверенные узлы
+
+Нужно, чтобы твой SSH-клиент доверял GitHub. При выполнении запроса к GitHub в терминале может появиться
+вопрос о доверии к GitHub и его «fingerprint» (отпечаток). В этом случае надо выбирать вариант «yes».
+
+Но проще не откладывать этот вопрос на будущее, а установить доверие уже сейчас.
+Для этого в терминале (на Windows исключительно в Git Bash) выполни команду:
+
+```
+ssh -T git@github.com
+```
+
+Если увидишь примерно такой текст:
+
+```
+The authenticity of host 'github.com (140.82.121.4)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+```
+
+введи «yes», чтобы установить доверие.
+
+</markdown>
+
+</slide>

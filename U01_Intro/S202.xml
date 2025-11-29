@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<slide id="3a8a7f83-bbb3-4d55-a0cd-4cf09618c0f0" title="Задание I2. Установка Git" xmlns="https://ulearn.me/schema/v2">
+
+<markdown>
+
+Скачай Git [тут](https://git-scm.com/downloads) и установи.
+
+Или установи через один из пакетных менеджеров:  
+```
+choco install git
+sudo apt install git
+brew install git
+```
+
+*Для Windows: в инсталляторе оставь все опции по умолчанию*
+
+</markdown>
+
+</slide>
