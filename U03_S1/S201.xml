@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<slide id="c74d6d0d-4902-448e-a549-0377167e56f1" title="Задание S1-1. Task Repo" xmlns="https://ulearn.me/schema/v2">
+
+<markdown>
+# Постановка задачи
+
+В этом практическом задании ты начнешь создавать Гайд по Git на языке разметки Markdown!
+
+Прежде всего надо получить репозиторий, в котором будет проходить дальнейшая работа, а затем подключить нужные настройки.
+
+# Шаг 1
+
+Найди в GitHub репозиторий [https://github.com/kontur-courses/ulearn-git-guide](https://github.com/kontur-courses/ulearn-git-guide), а затем склонируй его.
+
+Склонировать репозиторий можно в терминале с помощью команды `git clone &lt;url&gt;`, где в качестве `&lt;url&gt;` можно использовать адрес из адресной строки браузера.
+
+# Шаг 2
+
+После клонирования в терминале перейди в папку с репозиторием: `cd ulearn-git-guide`.
+
+# Шаг 3
+
+В склонированной папке найди файлы `apply-gitconfig-for-win.cmd` и `apply-gitconfig-for-nix.sh`. Файл `apply-gitconfig-for-win.cmd` подключает к конфигурации репозитория настройки для Windows,
+а файл `apply-gitconfig-for-nix.sh` подключает настройки для Linux и Mac.
+В зависимости от своей операционной системы, выполни один из файлов.
+
+&gt; Если на Linux или Mac не хватает прав, то выполни в терминале `sh apply-gitconfig-for-nix.sh`.
+
+Подключение этих файлов позволит настроить Git в этом репозитории для выполнения заданий,
+при этом твои личные настройки Git не поменяются.
+
+# Шаг 4
+
+Открой папку `ulearn-git-guide` в VS Code (`File / Open Folder` в главном меню)
+
+# Шаг 5
+
+Открой Git Graph (кнопка `Git Graph` в нижней панели VS Code). Убедись, что в нем есть коммит с названием `Initial commit`.
+
+*Также Git Graph можно найти с помощью бокового меню VS Code:*  
+</markdown>
+<galleryImages>
+    <image>images\git-graph-open.png</image>
+</galleryImages>
+<markdown>
+*Если Git Graph нет, то возможно это расширение у тебя не установлено.*
+*Открой в VS Code в боковом меню пункт Extensions (`Ctrl + Shift + X`), найди через поиск расширение «Git Graph» и установи.*
+</markdown>
+<markdown>
+# Результат задания
+
+*Теперь история коммитов должна выглядеть так:*
+</markdown>
+<galleryImages>
+    <image>images\s1-1-finish.png</image>
+</galleryImages>
+
+</slide>
